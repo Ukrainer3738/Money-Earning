@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moneymaking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Moneymaking</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">Про мене</a></li>
+                <li><a href="#contact">Контакти</a></li>
+                <li><a href="#" id="adminLogin">Вхід для адміністрування</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="article-list">
+            <h2>Статті</h2>
+            <ul id="articles">
+                <!-- Список статей буде тут -->
+            </ul>
+            <button id="addArticleButton" style="display:none;">Додати нову статтю</button>
+        </section>
+        <section id="article-content" style="display:none;">
+            <button id="backButton">Назад до списку статей</button>
+            <article data-id="">
+                <h2 contenteditable="false"></h2>
+                <img src="" alt="Фото статті" id="articleImage" style="max-width:100%; height:auto; display:none;">
+                <input type="file" id="imageUpload" style="display:none;">
+                <p contenteditable="false"></p>
+                <div class="dropdown">
+                    <button class="dropbtn">Більше</button>
+                    <div class="dropdown-content">
+                        <button id="addLinkButton" style="display:none;">Додати гіперпосилання</button>
+                        <button id="addImageButton" style="display:none;">Додати фото</button>
+                        <button id="deleteArticleButton" style="display:none;">Видалити статтю</button>
+                        <button id="formatBold" style="display:none;">Жирний</button>
+                        <button id="formatItalic" style="display:none;">Курсив</button>
+                        <button id="formatHeading" style="display:none;">Заголовок</button>
+                    </div>
+                </div>
+                <button id="saveButton" style="display:none;">Зберегти статтю</button>
+            </article>
+        </section>
+        <section id="about">
+            <h2>Про мене</h2>
+            <p>Тут буде інформація про вас...</p>
+        </section>
+    </main>
+    <footer>
+        <p id="contact">Контакти: example@example.com, +380123456789</p>
+        <p>© 2024 Moneymaking. Всі права захищені.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
